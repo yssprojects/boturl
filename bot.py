@@ -29,7 +29,7 @@ async def link_handler(bot, message):
         shotlink = requests.get(links).json()
         ide = shotlink['unique_id']
         linka = "https://ysslinkbot.herokuapp.com/"+ide
-        await message.reply('Here is your '+linka, quote=True)
+        await message.reply('Here is your \n '+linka'\n @yssprojects', quote=True)
     except Exception as e:
         await message.reply(f'Error: {e}', quote=True)
 
