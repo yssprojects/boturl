@@ -1,0 +1,38 @@
+{
+    "name": "Short Link Bot",
+    "description": "A bot to create a short url",
+    "keywords": [
+        "telegram",
+        "shortlink"
+    ],
+    "website": "https://github.com/Mahesh0253/GPlink-bot",
+    "repository": "https://github.com/Mahesh0253/GPlink-bot",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your bot token",
+            "value": ""
+        },
+        "API_ID": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": ""
+        },
+        "API_URL": {
+            "description": "Enter Your Api Url",
+            "value": "https://ysslinkbot.herokuapp.com/"
+        }
+    },
+    "addons": [],
+    "buildpacks": [{
+        "url": "heroku/python"
+    }],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
